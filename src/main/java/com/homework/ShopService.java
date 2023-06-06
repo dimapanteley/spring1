@@ -16,7 +16,7 @@ public class ShopService {
 //        this.product = product;
     }
 
-    public void add(String name, Double price) {
+    public void add(String name, Integer price) {
         Product product = new Product(name, price);
         shoppingCart.getChart().put(product.getId(), product);
     }

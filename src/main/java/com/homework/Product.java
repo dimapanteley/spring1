@@ -1,17 +1,15 @@
 package com.homework;
 
-import org.springframework.stereotype.Component;
-
 import java.util.Objects;
 
 public class Product {
     private Integer idCounter = 1;
     private Integer id;
     private String name;
-    private Double price;
+    private Integer price;
 
 
-    public Product(String name, Double price) {
+    public Product(String name, Integer price) {
         this.id = idCounter++;
         this.name = name;
         this.price = price;
@@ -33,7 +31,7 @@ public class Product {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 

@@ -13,7 +13,7 @@ public class ShopController {
         this.shopService = shopService;
     }
     @GetMapping("/add")
-    public String add(@RequestParam ("name") String name, @RequestParam("price") Double price){
+    public String add(@RequestParam ("name") String name, @RequestParam("price") Integer price){
         shopService.add(name, price);
         return "товар <b> " + name + " " + price + "</b> добавлен";
     }
